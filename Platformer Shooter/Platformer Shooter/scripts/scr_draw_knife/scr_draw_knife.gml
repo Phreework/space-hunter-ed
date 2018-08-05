@@ -1,4 +1,4 @@
-/// @description scr_draw_knife(x,y,scale,dir)
+/// @description scr_draw_knife(x,y,scale,dir)弃用
 /// @param x
 /// @param y
 /// @param scale

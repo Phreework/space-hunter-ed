@@ -1,5 +1,5 @@
 //判断o_player是否存在
-draw_self();//绘制血条
+draw_sprite(sprite_index,image_index,x,y);//绘制血条
 if !instance_exists(o_player) exit;
 
 draw_health_=lerp(draw_health_,o_player.health_,.5);

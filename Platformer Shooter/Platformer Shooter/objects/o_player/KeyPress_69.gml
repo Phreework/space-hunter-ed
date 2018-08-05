@@ -1,5 +1,5 @@
-//向前冲刺
-if alarm[2]==-1{
+/// @description 向前冲刺
+if alarm[2] == -1 {
 
 	var qianchong_=jump_width_+60;
 	speed_[h]=qianchong_;

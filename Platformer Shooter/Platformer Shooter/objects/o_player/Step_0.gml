@@ -1,14 +1,14 @@
-/// @description Player Movement
+/// @description 玩家步事件
 //check for death
-if health_<=0{
+if health_ <= 0 {
 	instance_destroy();
 }
 
 //左右行走判断，不动的时候速度为零
-var hinput=keyboard_check(vk_right)-keyboard_check(vk_left);
+var hinput = keyboard_check(vk_right)-keyboard_check(vk_left);
 
-if hinput !=0{
-	speed_[h] += hinput*acceleration_;
+if hinput != 0 {
+	speed_[h] += hinput * acceleration_;
 	speed_[h]= clamp(speed_[h],-max_speed_,max_speed_);
 	var flipped=(mouse_x>x)*2-1;
 	image_speed=flipped*hinput*.6;
@@ -26,12 +26,20 @@ if !place_meeting(x,y+1,o_solid){
 	speed_[v]+=gravity_;
 	image_speed=0;
 	image_index=6;
+	if keyboard_check_pressed(vk_up) && jump_twice_flag {
+		speed_[v]=jump_height_;
+		x_scale_=image_xscale*.8;
+		y_scale_=image_yscale*1.4;	
+		jump_twice_flag = false;
+		alarm[5] = 15;
+	}
 }else{
+	alarm[5] = -1;
 	if keyboard_check_pressed(vk_up){
 		speed_[v]=jump_height_;
 		x_scale_=image_xscale*.8;
 		y_scale_=image_yscale*1.4;		
-		
+		jump_twice_flag = true;
 	}
 }
 
@@ -57,8 +65,10 @@ if place_meeting(x,y+1,o_solid) && !place_meeting(x,yprevious+1,o_solid){
 if alarm[2]==20
     move_state=MOVE;
 
+get_flipped=(mouse_x>x)*2-1;
 
-//出刀代码
-scr_useKnife(true,true);
-
+#region 弃用代码
+////出刀代码
+//scr_useKnife(true,true);
+#endregion
 

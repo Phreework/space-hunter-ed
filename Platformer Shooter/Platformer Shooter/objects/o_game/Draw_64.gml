@@ -8,6 +8,10 @@ if paused_{//绘制暂停画面
 	draw_set_valign(fa_middle);
 	draw_text(gui_width/2,gui_height/2,"Paused");
 }
+if !instance_exists(o_player) exit;
+
 draw_set_halign(fa_right);
 draw_text(display_get_gui_width()-6,4,"Score:" + string(score));
+if (o_player.player_gun.object_index != o_gun_default) 
+	draw_text(display_get_gui_width()-6,20,"Bullet:" + string(o_player.player_gun.bullet_number));
 draw_set_halign(fa_left);

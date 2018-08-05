@@ -135,13 +135,53 @@
             "m_owner": "2b210c17-2707-4fa9-80d5-fa98dd47b000"
         },
         {
-            "id": "109b59bc-7b01-4871-bf00-29a50f088579",
+            "id": "f7d50a9c-e1d1-4f18-ad59-92e545fa6688",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "ebe59739-bc79-475b-a60d-631e2f23fe7e",
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 51,
+            "eventtype": 6,
+            "m_owner": "2b210c17-2707-4fa9-80d5-fa98dd47b000"
+        },
+        {
+            "id": "1ef0e552-e95c-45d7-a951-8b8d08665891",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 2,
+            "m_owner": "2b210c17-2707-4fa9-80d5-fa98dd47b000"
+        },
+        {
+            "id": "bff189c0-d7bb-43f6-937c-e691ab7bd0d2",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "80972210-79d1-4059-8950-2b7e2ae0ff38",
             "enumb": 0,
             "eventtype": 4,
+            "m_owner": "2b210c17-2707-4fa9-80d5-fa98dd47b000"
+        },
+        {
+            "id": "ea64153b-766d-4fe2-9ff3-65653c3d3a34",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "b514a297-b12d-430d-b153-3f2582e21009",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "2b210c17-2707-4fa9-80d5-fa98dd47b000"
+        },
+        {
+            "id": "33fc0572-fdd2-42b0-8338-a14b9fdf5ca9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 5,
+            "eventtype": 2,
             "m_owner": "2b210c17-2707-4fa9-80d5-fa98dd47b000"
         }
     ],

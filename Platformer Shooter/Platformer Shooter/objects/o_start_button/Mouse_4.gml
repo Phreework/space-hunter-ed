@@ -1,1 +1,1 @@
-room_goto(r_one);
+room_goto(r_test);

@@ -5,3 +5,8 @@ var _gui_height = camera_get_view_height(view_camera[0]);
 display_set_gui_size(_gui_width,_gui_height);
 score = 0;
 draw_set_font(f_one);
+
+
+//隐藏solids对象
+var solid_layer=layer_get_id("Solids");
+layer_set_visible(solid_layer,debug_mode);

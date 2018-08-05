@@ -15,7 +15,10 @@ if scr_draw_is_flash_interval_off(alarm[1],flash_interval){
 	 
 switch (move_state) {
 	case MOVE:
-	    draw_sprite_ext(s_player,image_index, x,y,flipped,1,0,image_blend,image_alpha);
+		if scr_is_on_twice_jump()
+			draw_sprite_ext(s_player_jump_twice,image_index, x,y,flipped,1,0,image_blend,image_alpha);
+		else 
+			draw_sprite_ext(s_player,image_index, x,y,flipped,1,0,image_blend,image_alpha);
 	    break;
 	case L_DASH:
 		draw_sprite_ext(s_player_dash_left,image_index, x,y,flipped,1,0,image_blend,image_alpha);
@@ -29,8 +32,14 @@ switch (move_state) {
 }
 	//draw_sprite_ext(s_player,image_index, x,y,flipped,1,0,image_blend,image_alpha);
 	//draw_sprite_ext(s_player,image_index, x,y,x_scale_*flipped,y_scale_,0,image_blend,image_alpha);教程原代码
-		
 
+#region 弃用小刀绘制代码
+////绘制小刀
+//var flag_ = scr_draw_knife(x-5,y-10,0.8,flipped);
+#endregion
+
+//绘制枪
+scr_draw_gun(flipped,dir,!sword_flag && !change_gun_flag);
 
 #region 老的绘制枪代码
 	////Draw the gun
@@ -39,13 +48,21 @@ switch (move_state) {
 	
 	//gpu_set_fog(false,c_silver,0,1);
 #endregion
-//绘制小刀
-var flag_ = scr_draw_knife(x-5,y-10,0.8,flipped);
 
 
-//绘制枪
-scr_draw_gun(flipped,dir,flag_);
-
-
-
-
+#region 测试用代码
+////测试瞄准代码
+//if (dir >= 90 && dir <= 270) {
+//	var gun_x = player_gun.x + lengthdir_y(7, dir);
+//	var gun_y = player_gun.y - lengthdir_x(7, dir);
+//}
+//else {
+//	var gun_x = player_gun.x - lengthdir_y(7, dir);
+//	var gun_y = player_gun.y + lengthdir_x(7, dir);
+//}
+//var x_offset=lengthdir_x(38,dir);
+//var y_offset=lengthdir_y(38,dir);
+//draw_point(player_gun.x,player_gun.y);
+//draw_point(gun_x,gun_y);
+//draw_point(gun_x + x_offset, gun_y + y_offset);
+#endregion

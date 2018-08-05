@@ -1,2 +1,2 @@
-/// @description Invincibility Frames玩家无敌状态时间
+/// @description 玩家受伤无敌计时器
 invincible_=false;

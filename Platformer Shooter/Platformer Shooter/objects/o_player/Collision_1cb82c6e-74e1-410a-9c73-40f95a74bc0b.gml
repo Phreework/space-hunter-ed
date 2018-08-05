@@ -1,11 +1,10 @@
-/// @description  Take damage
+/// @description  Take damage（弃用）
 if (alarm[2]<=29 && alarm[2]>=0) exit;
 if invincible_==false{
-	health_ -=1;
-	
+	health_ -= 0.5;	
 	audio_play_sound(a_hurt,5,false);
 	invincible_=true;
-	alarm[1]=game_get_speed(gamespeed_fps);//无敌时间1秒
+	alarm[1]= 10;//无敌时间1/6秒
 	
 }
 

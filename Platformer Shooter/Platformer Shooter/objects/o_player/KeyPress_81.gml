@@ -1,5 +1,5 @@
-//向后冲刺
-if alarm[2]==-1{
+/// @description 向后冲刺
+if alarm[2] == -1 {
 	var houtui_=jump_width_-1;
 	speed_[h]=houtui_;
 	x_scale_=image_xscale*.8;
