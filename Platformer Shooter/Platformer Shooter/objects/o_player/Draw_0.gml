@@ -1,4 +1,4 @@
-/// @description Draw the player and gun
+/// @description 画玩家和枪
 var dir = point_direction(x,y-sprite_height/2,mouse_x,mouse_y);
 var flipped=(mouse_x>x)*2-1;
 
@@ -26,6 +26,13 @@ switch (move_state) {
 	case R_DASH:
 		draw_sprite_ext(s_player_dash_right,image_index, x,y,flipped,1,0,image_blend,image_alpha);
 		break;
+	case ROLL:
+		var roll_dir = sign(speed_[h]);
+		draw_sprite_ext(s_player_roll,image_index, x,y,roll_dir,1,0,image_blend,image_alpha);
+		break;
+	case SQUART:
+		draw_sprite_ext(s_player_squat,image_index, x,y,flipped,1,0,image_blend,image_alpha);
+		break;
 	default:
 		draw_sprite_ext(s_player,image_index, x,y,flipped,1,0,image_blend,image_alpha);
 		break;
@@ -39,7 +46,7 @@ switch (move_state) {
 #endregion
 
 //绘制枪
-scr_draw_gun(flipped,dir,!sword_flag && !change_gun_flag);
+scr_draw_gun(flipped,dir,!sword_flag && !change_gun_flag && move_state != ROLL);
 
 #region 老的绘制枪代码
 	////Draw the gun

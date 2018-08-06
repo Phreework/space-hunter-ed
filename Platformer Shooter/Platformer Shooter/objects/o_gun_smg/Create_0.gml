@@ -6,10 +6,14 @@ cooldown = 5;
 gun_spark = o_gun_smg_spark;
 gun_bullet_player = o_gun_smg_bullet;
 gun_bullet = o_gun_smg_bullet_enemy;
+gun_box = o_gun_smg_box;
 width_ = 38;
 height_ = 7;
 bullet_number = 199;
 bullet_add = 100;
+bullet_clip = 10;
+change_clip_time = 60;
+
 
 player_flag = false;
 player_gun_sprite = s_player_gun1;

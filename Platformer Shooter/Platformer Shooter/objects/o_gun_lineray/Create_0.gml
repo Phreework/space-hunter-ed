@@ -6,10 +6,13 @@ cooldown = 40;
 gun_spark = o_gun_lineray_spark;
 gun_bullet_player = o_gun_lineray_bullet;
 gun_bullet = o_gun_lineray_bullet_enemy;
+gun_box = o_gun_lineray_box;
 width_ = 38;
 height_ = 3;
 bullet_number = 80;
 bullet_add = 40;
+bullet_clip = 1;
+change_clip_time = 80;
 
 player_flag = false;
 player_gun_sprite = s_player_gun3;

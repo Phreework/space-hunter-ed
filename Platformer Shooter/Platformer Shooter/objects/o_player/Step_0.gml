@@ -4,6 +4,8 @@ if health_ <= 0 {
 	instance_destroy();
 }
 
+
+
 //左右行走判断，不动的时候速度为零
 var hinput = keyboard_check(vk_right)-keyboard_check(vk_left);
 
@@ -13,13 +15,31 @@ if hinput != 0 {
 	var flipped=(mouse_x>x)*2-1;
 	image_speed=flipped*hinput*.6;
 	
-	move_state = MOVE;
+	//move_state = MOVE;
 }else{
 	speed_[h]=lerp(speed_[h],0,friction_);
 	image_speed=0;
-	image_index=0;
+	if (move_state == MOVE)
+		image_index=0;
 }
 
+if (keyboard_check(vk_down)) && alarm[6] == -1{
+	move_state = SQUART;
+} else if (alarm[6] == -1){
+	move_state = MOVE;
+}
+
+if keyboard_check(vk_down) && (keyboard_check_pressed(vk_left) || keyboard_check_pressed(vk_right)) && alarm[6] == -1{
+	move_state = ROLL;
+	alarm[6] = 30;
+	image_speed = 10;
+}
+if (alarm[6] != -1) {
+	image_speed = 2;
+	//image_index = 30 - alarm[6];
+	speed_[h] += hinput * acceleration_*3;
+	speed_[h]= clamp(speed_[h],-max_speed_*3,max_speed_*3);
+}
 
 //添加重力,以及跳跃事件
 if !place_meeting(x,y+1,o_solid){
@@ -62,8 +82,8 @@ if place_meeting(x,y+1,o_solid) && !place_meeting(x,yprevious+1,o_solid){
 // x_scale_=lerp(x_scale_,image_xscale,.1);
 // y_scale_=lerp(y_scale_,image_yscale,.1);
 
-if alarm[2]==20
-    move_state=MOVE;
+if alarm[2]==20 && (move_state == L_DASH || move_state == R_DASH)
+    move_state = MOVE;
 
 get_flipped=(mouse_x>x)*2-1;
 

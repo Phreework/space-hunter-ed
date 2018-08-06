@@ -9,6 +9,9 @@ friction_=.3;
 jump_height_=-10;
 jump_width_=-30;
 
+//翻滚距离
+roll_dis = 90;
+alarm[6] = 30;
 //人物属性
 max_health_=50;//最大血量
 health_=max_health_; //生命值 
@@ -33,6 +36,7 @@ move_state = MOVE;
 sword_flag = false;
 change_gun_flag = false;
 jump_twice_flag = false;
+roll_flag = false;
 //近战武器冷却时间
 sword_cooldown = 75;
 //给其他obj引用player的方向（不安全，应改为由一个obj代理完成）

@@ -1,4 +1,4 @@
-/// @description  Take damage（弃用）
+/// @description  受到伤害（弃用）
 if (alarm[2]<=29 && alarm[2]>=0) exit;
 if invincible_==false{
 	health_ -= 0.5;	

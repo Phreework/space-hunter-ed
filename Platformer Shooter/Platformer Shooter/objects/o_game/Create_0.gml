@@ -10,3 +10,5 @@ draw_set_font(f_one);
 //隐藏solids对象
 var solid_layer=layer_get_id("Solids");
 layer_set_visible(solid_layer,debug_mode);
+
+audio_play_sound(a_scene1,0.6,false);

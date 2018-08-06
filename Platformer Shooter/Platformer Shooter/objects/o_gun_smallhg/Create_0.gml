@@ -9,6 +9,8 @@ width_ = 28;
 height_ = 8;
 bullet_number = 300;
 bullet_add = 120;
+bullet_clip = 5;
+change_clip_time = 180;
 
 player_flag = false;
 player_gun_sprite = s_player_gun6;

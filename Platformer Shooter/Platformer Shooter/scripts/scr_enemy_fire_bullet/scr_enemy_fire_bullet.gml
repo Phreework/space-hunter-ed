@@ -1,5 +1,5 @@
 /// Create a bullet
-if alarm[0]<=0 {
+if alarm[0]<=0 && alarm[11] == -1{
 	var dir = point_direction(x,y-sprite_height/2,o_player.x,o_player.y-o_player.sprite_height/2);
 	if (dir >= 90 && dir <= 270) {
 		var gun_x = default_gun.x + lengthdir_y(default_gun.height_, dir);
@@ -19,4 +19,9 @@ if alarm[0]<=0 {
 	bullet.direction = dir;
 	bullet.image_angle = dir;//控制子弹图像的角度
 	alarm[0] = bullet_cooldown_;
+	gun_clip --;
+	if (gun_clip == 0) {
+		alarm[11] = default_gun.change_clip_time;
+		gun_clip = default_gun.bullet_clip;
+	}
 }
