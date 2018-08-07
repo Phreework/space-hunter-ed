@@ -7,4 +7,6 @@ shoot_sound = a_laser;
 hit_sound = a_hit;
 hit = o_gun_smg_hit;
 
+alarm[0] = 20;
+
 audio_play_sound(shoot_sound, 5, false);

@@ -847,6 +847,14 @@
             }
         },
         {
+            "Key": "3e913174-eb1e-45b2-b42e-be7eefec8ed0",
+            "Value": {
+                "id": "5393538f-7556-44b0-93a1-b83b52a29501",
+                "resourcePath": "sprites\\s_enemy1_shield_left\\s_enemy1_shield_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3ec2695d-8a7c-4290-84de-f334cbd5635e",
             "Value": {
                 "id": "16f39c87-d9ba-4e6f-bbc4-c2a9f3257e3a",

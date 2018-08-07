@@ -42,7 +42,7 @@ if (state_ == N1_SILENCE || state_ == N1_DIS_ATTACK) {
 		y = other.y-other.sprite_height/2-8;
 		draw_sprite_ext(sprite_index,0, x, y,1,flipped,dir,other.image_blend,other.image_alpha);
 	}
-} else if (state_ == N1_ADVANCE_ATTACK || state_ == N1_ADVANCE_PAUSE_ATTACK) {
+} else if (state_ == N1_ADVANCE_ATTACK ) {
 	//绘制自己
 	draw_sprite_ext(sprite_index,image_index,x,y,-1,1,0,c_white,1);
 
@@ -51,5 +51,16 @@ if (state_ == N1_SILENCE || state_ == N1_DIS_ATTACK) {
 		x = other.x-4*(-1);
 		y = other.y-other.sprite_height/2-8;
 		draw_sprite_ext(sprite_index,0, x, y,-1,1,0,other.image_blend,other.image_alpha);
+	}
+} else if (state_ == N1_ADVANCE_PAUSE_ATTACK) {
+	//绘制自己
+	draw_sprite_ext(sprite_index,image_index,x,y,-1,1,0,c_white,1);
+	if !instance_exists(default_gun) exit;
+	with (default_gun) {
+		//Draw the gun
+		x = other.x-4*(-1);
+		y = other.y-other.sprite_height/2-8;
+		image_xscale = -1;
+		draw_sprite_ext(sprite_index,image_index, x, y,image_xscale,1,0,other.image_blend,other.image_alpha);
 	}
 }
