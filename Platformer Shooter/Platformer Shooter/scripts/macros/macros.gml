@@ -9,6 +9,7 @@
 #macro JUMP_TWICE 3
 #macro ROLL		4
 #macro SQUART   5
+#macro DASH		6
 
 //敌人状态列举
 #macro SILENCE	0

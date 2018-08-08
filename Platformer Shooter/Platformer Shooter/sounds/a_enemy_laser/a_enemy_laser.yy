@@ -1,5 +1,5 @@
 {
-    "id": "4d2a9489-ac27-427b-b951-44b04cfef08f",
+    "id": "40586eaa-4056-473e-8f97-b3308b60a628",
     "modelName": "GMSound",
     "mvc": "1.0",
     "name": "a_enemy_laser",

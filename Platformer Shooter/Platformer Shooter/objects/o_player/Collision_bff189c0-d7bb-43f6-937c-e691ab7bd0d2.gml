@@ -6,6 +6,6 @@ if !invincible_ {
 	invincible_ = true;
 	alarm[1]= 10;//无敌时间1/6秒
 }
-
-instance_destroy(other);
+if(other != o_gun_sg_bullet_enemy)
+	instance_destroy(other);
 

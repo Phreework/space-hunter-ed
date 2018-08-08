@@ -1,8 +1,8 @@
 {
-    "id": "8e67ea50-0e5f-42ab-aaaa-422d14aaa0ca",
+    "id": "b0b8fb17-a691-4a1c-9e6c-d7277583a8df",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "a_laser",
+    "name": "a_gun_rocket",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,

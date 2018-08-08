@@ -23,3 +23,5 @@ layer_set_visible(solid_layer,debug_mode);
 
 global.bullet_time_flag = false;
 global.time_scale = 0.05;
+
+global.enemy_bullet_speed_scale = 0.8;

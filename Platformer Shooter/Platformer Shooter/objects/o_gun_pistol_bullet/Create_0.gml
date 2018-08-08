@@ -4,7 +4,7 @@ depth = -1;
 speed_ = 15;
 speed = scr_common_bullet_time_var(speed_);
 damage = 3;
-shoot_sound = a_laser;
+shoot_sound = a_gun_pistol;
 hit_sound = a_hit;
 hit = o_gun_pistol_hit;
 

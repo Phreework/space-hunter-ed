@@ -3,8 +3,34 @@
 if health_ <= 0 {
 	instance_destroy();
 }
-
-
+#region 冲刺判断
+if keyboard_check_pressed(vk_right) && alarm[7] == -1{
+	dash_flag = 1;
+	alarm[7] = 15;
+} else {
+	if keyboard_check_pressed(vk_right){
+		dash_flag = 1;
+		move_state = DASH;
+		x_scale_=image_xscale*.8;
+		y_scale_=image_yscale*1.4;
+		effect_create_below(ef_smoke, x, y, 0, c_red);
+		alarm[2]=30;
+	}
+}
+if keyboard_check_pressed(vk_left) && alarm[7] == -1{
+	dash_flag = -1;
+	alarm[7] = 15;
+} else {
+	if keyboard_check_pressed(vk_left){
+		dash_flag = -1;
+		move_state = DASH;
+		x_scale_=image_xscale*.8;
+		y_scale_=image_yscale*1.4;
+		effect_create_below(ef_smoke, x, y, 0, c_red);
+		alarm[2]=30;
+	}
+}
+#endregion
 
 //左右行走判断，不动的时候速度为零
 var hinput = keyboard_check(vk_right)-keyboard_check(vk_left);
@@ -13,18 +39,20 @@ if hinput != 0 {
 	speed_[h] += hinput * acceleration_;
 	speed_[h]= clamp(speed_[h],-max_speed_,max_speed_);
 	var flipped=(mouse_x>x)*2-1;
-	image_speed=flipped*hinput*.6;
-	
-	//move_state = MOVE;
+	image_speed=flipped*hinput*1.2;
 }else{
 	speed_[h]=lerp(speed_[h],0,friction_);
 	image_speed=0;
 	if (move_state == MOVE)
 		image_index=0;
 }
+if(move_state == DASH){
+		speed_[h] = dash_flag*dash_dis;
+}
 
 if (keyboard_check(vk_down)) && alarm[6] == -1{
 	move_state = SQUART;
+	speed_[h] = 0;	//蹲下速度为0
 } else if (alarm[6] == -1){
 	move_state = MOVE;
 }

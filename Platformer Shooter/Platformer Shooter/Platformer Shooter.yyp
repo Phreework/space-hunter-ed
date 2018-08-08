@@ -511,6 +511,14 @@
             }
         },
         {
+            "Key": "1e10b6da-631c-47c9-b75e-00424187f1ff",
+            "Value": {
+                "id": "f9488c1c-cf43-4b17-b41c-7ae2ae77d964",
+                "resourcePath": "sounds\\a_gun_default\\a_gun_default.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "216d8635-b692-45ea-8f7a-eb3bd7c09c15",
             "Value": {
                 "id": "e72a596c-4280-4556-b959-afc287b9ad26",
@@ -676,6 +684,14 @@
                 "id": "23549e06-587e-44cd-9abf-033f872bbbd0",
                 "resourcePath": "sprites\\spr_bg_nightsky_red\\spr_bg_nightsky_red.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2d37430b-0673-458f-9818-2569ccde7276",
+            "Value": {
+                "id": "da0c8bc6-587c-4a5a-8eb0-a61d7411a4f4",
+                "resourcePath": "sounds\\a_gun_smallhg\\a_gun_smallhg.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -935,6 +951,14 @@
             }
         },
         {
+            "Key": "40586eaa-4056-473e-8f97-b3308b60a628",
+            "Value": {
+                "id": "3a71b396-8a13-4e93-818c-60218fe3b766",
+                "resourcePath": "sounds\\a_enemy_laser\\a_enemy_laser.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "40994a87-f687-4a1b-afab-ddae6ac0071b",
             "Value": {
                 "id": "2d2653e5-07f1-42ff-9343-bbffbcfda321",
@@ -1066,7 +1090,7 @@
             "Key": "4d2a9489-ac27-427b-b951-44b04cfef08f",
             "Value": {
                 "id": "9799b052-ffac-47bc-9b5f-3692addbd316",
-                "resourcePath": "sounds\\a_enemy_laser\\a_enemy_laser.yy",
+                "resourcePath": "sounds\\a_gun_smg\\a_gun_smg.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -2066,7 +2090,7 @@
             "Key": "8e67ea50-0e5f-42ab-aaaa-422d14aaa0ca",
             "Value": {
                 "id": "7cc3ede0-b771-464e-93c7-cfff58de0083",
-                "resourcePath": "sounds\\a_laser\\a_laser.yy",
+                "resourcePath": "sounds\\a_gun_lineray\\a_gun_lineray.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -2276,6 +2300,14 @@
                 "id": "620e3b7b-0eb3-41b1-9e3b-e31f1d93fcce",
                 "resourcePath": "sprites\\s_bullet_hit1\\s_bullet_hit1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9d5929d5-4e58-428e-845d-f85fbda84c06",
+            "Value": {
+                "id": "3908e157-0174-4904-aad1-90b3607e806e",
+                "resourcePath": "sounds\\a_gun_pistol\\a_gun_pistol.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -2567,6 +2599,14 @@
             }
         },
         {
+            "Key": "afdb27f9-a9dd-403e-83d4-dc77313cd38f",
+            "Value": {
+                "id": "75ab7b84-fb52-426c-89b3-9faf535acee3",
+                "resourcePath": "views\\afdb27f9-a9dd-403e-83d4-dc77313cd38f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b01b497c-de00-43bb-8f62-26a5d1e0c60f",
             "Value": {
                 "id": "73b9e2a6-2793-47d7-89d2-828529d57ada",
@@ -2580,6 +2620,14 @@
                 "id": "35348a04-3644-4f02-92f0-f50faa832b5c",
                 "resourcePath": "objects\\o_food_mushroom\\o_food_mushroom.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b0b8fb17-a691-4a1c-9e6c-d7277583a8df",
+            "Value": {
+                "id": "8044aeaa-dad5-4663-9b27-22ca32fd6f73",
+                "resourcePath": "sounds\\a_gun_rocket\\a_gun_rocket.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -2999,6 +3047,14 @@
             }
         },
         {
+            "Key": "ccc06398-d0c5-43bc-9bf2-436a3e6487a3",
+            "Value": {
+                "id": "847bf344-b7fe-4697-b829-4877a9699a3d",
+                "resourcePath": "sounds\\a_gun_sg\\a_gun_sg.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "cd1fac8d-52c0-4239-85c0-1b141dee1592",
             "Value": {
                 "id": "153d01b6-ac7a-446a-9353-416b7bc9bab3",
@@ -3052,6 +3108,14 @@
                 "id": "8c6210c0-d9a6-4ae8-81fe-caf6ac740847",
                 "resourcePath": "sprites\\boss_biggun_zhuangji\\boss_biggun_zhuangji.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d06f9505-b147-4bd8-a89e-e67980b41186",
+            "Value": {
+                "id": "373bef40-4a5b-43be-9034-29b85495946f",
+                "resourcePath": "sounds\\a_gun_rf\\a_gun_rf.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -3140,6 +3204,14 @@
                 "id": "13764459-4b78-4b16-b6b8-c392752d0d86",
                 "resourcePath": "sprites\\s_enemy_gun4_bullet\\s_enemy_gun4_bullet.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d6437258-3201-4582-b0a5-d2bae727d913",
+            "Value": {
+                "id": "3f8fa8a1-9391-40aa-ae7b-e45e871e400a",
+                "resourcePath": "sounds\\a_gun_sofar\\a_gun_sofar.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -3423,6 +3495,14 @@
             }
         },
         {
+            "Key": "e7adc9e4-68f1-4933-afd9-f6909ccd3c61",
+            "Value": {
+                "id": "b5369f92-d708-48ec-8b38-ad00e57bc253",
+                "resourcePath": "sounds\\a_gun_heavy\\a_gun_heavy.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "eae1c9f9-c719-4ea4-a436-832f37fae3c6",
             "Value": {
                 "id": "ff64b01d-79c7-4143-92df-6a9aeaf5b54d",
@@ -3652,6 +3732,14 @@
                 "id": "43890956-ddda-4ab5-b9f2-af04f4ee6875",
                 "resourcePath": "scripts\\Macros\\Macros.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fc0a7cd2-14d2-4770-b149-5770f50d7a51",
+            "Value": {
+                "id": "ba13831d-26ee-4b27-9df8-8fb9c33adc20",
+                "resourcePath": "sounds\\a_gun_rocket2\\a_gun_rocket2.yy",
+                "resourceType": "GMSound"
             }
         },
         {

@@ -12,6 +12,8 @@ jump_width_=-30;
 //翻滚距离
 roll_dis = 90;
 alarm[6] = 30;
+//冲刺
+dash_dis = 95;
 //人物属性
 max_health_=50;//最大血量
 health_=max_health_; //生命值 
@@ -37,6 +39,7 @@ sword_flag = false;
 change_gun_flag = false;
 jump_twice_flag = false;
 roll_flag = false;
+dash_flag = 1;
 //近战武器冷却时间
 sword_cooldown = 75;
 //给其他obj引用player的方向（不安全，应改为由一个obj代理完成）

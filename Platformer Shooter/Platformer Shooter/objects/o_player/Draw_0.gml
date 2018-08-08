@@ -17,15 +17,23 @@ switch (move_state) {
 	case MOVE:
 		if scr_is_on_twice_jump()
 			draw_sprite_ext(s_player_jump_twice,image_index, x,y,flipped,1,0,image_blend,image_alpha);
-		else 
-			draw_sprite_ext(s_player,image_index, x,y,flipped,1,0,image_blend,image_alpha);
+		else {
+			var hinput = keyboard_check(vk_right)-keyboard_check(vk_left);
+			if hinput != 0
+				draw_sprite_ext(s_player,image_index, x,y,flipped,1,0,image_blend,image_alpha);
+			else
+				draw_sprite_ext(s_player,image_number - 1, x,y,flipped,1,0,image_blend,image_alpha);
+		}
 	    break;
-	case L_DASH:
+	case DASH:
 		draw_sprite_ext(s_player_dash_left,image_index, x,y,flipped,1,0,image_blend,image_alpha);
 		break;
-	case R_DASH:
-		draw_sprite_ext(s_player_dash_right,image_index, x,y,flipped,1,0,image_blend,image_alpha);
-		break;
+	//case L_DASH:
+	//	draw_sprite_ext(s_player_dash_left,image_index, x,y,flipped,1,0,image_blend,image_alpha);
+	//	break;
+	//case R_DASH:
+	//	draw_sprite_ext(s_player_dash_right,image_index, x,y,flipped,1,0,image_blend,image_alpha);
+	//	break;
 	case ROLL:
 		var roll_dir = sign(speed_[h]);
 		draw_sprite_ext(s_player_roll,image_index, x,y,roll_dir,1,0,image_blend,image_alpha);
