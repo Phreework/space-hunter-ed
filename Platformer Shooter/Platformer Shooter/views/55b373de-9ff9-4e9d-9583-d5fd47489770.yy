@@ -12,7 +12,8 @@
         "e3f95cd5-0592-405d-bea0-74123b98f587",
         "0feef815-22d1-464e-93f0-907cbade4550",
         "f4a85cdd-ba9d-44d8-9522-e008e463ea66",
-        "2c3cea74-1ee0-47e0-89dc-089a7ea35873"
+        "2c3cea74-1ee0-47e0-89dc-089a7ea35873",
+        "9ece5a28-8808-4f00-bd38-299dba4a3e3d"
     ],
     "filterType": "GMSprite",
     "folderName": "Background&Scene",

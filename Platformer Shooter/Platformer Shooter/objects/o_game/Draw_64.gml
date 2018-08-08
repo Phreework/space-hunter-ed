@@ -1,3 +1,5 @@
+
+if room != r_test exit;
 if paused_{//绘制暂停画面
 	var gui_width=display_get_gui_width();
 	var gui_height=display_get_gui_height();
@@ -8,6 +10,8 @@ if paused_{//绘制暂停画面
 	draw_set_valign(fa_middle);
 	draw_text(gui_width/2,gui_height/2,"Paused");
 }
+
+//绘制分数和武器信息
 if !instance_exists(o_player) exit;
 
 draw_set_halign(fa_right);

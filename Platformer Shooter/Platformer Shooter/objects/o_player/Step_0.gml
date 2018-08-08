@@ -43,7 +43,8 @@ if (alarm[6] != -1) {
 
 //添加重力,以及跳跃事件
 if !place_meeting(x,y+1,o_solid){
-	speed_[v]+=gravity_;
+	//在空中
+	speed_[v]+=scr_common_bullet_time_var(gravity_);
 	image_speed=0;
 	image_index=6;
 	if keyboard_check_pressed(vk_up) && jump_twice_flag {
@@ -54,6 +55,7 @@ if !place_meeting(x,y+1,o_solid){
 		alarm[5] = 15;
 	}
 }else{
+	//在地上
 	alarm[5] = -1;
 	if keyboard_check_pressed(vk_up){
 		speed_[v]=jump_height_;

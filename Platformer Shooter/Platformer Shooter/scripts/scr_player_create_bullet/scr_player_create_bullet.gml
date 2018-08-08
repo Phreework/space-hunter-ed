@@ -19,4 +19,4 @@ spark.direction=dir;
 spark.image_angle=dir;
 bullet.direction=dir;
 bullet.image_angle=dir;//控制子弹图像的角度
-alarm[0]=bullet_cooldown_;
+alarm[0]= bullet_cooldown_;

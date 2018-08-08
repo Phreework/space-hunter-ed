@@ -7,3 +7,4 @@ if !invincible_ {
 	alarm[1]=20;//无敌时间1/3秒	
 }
 
+scr_collision_physics_effect(.4);

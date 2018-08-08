@@ -20,7 +20,7 @@ if alarm[0]<=0 && alarm[11] == -1{
 	bullet.image_angle = dir;//控制子弹图像的角度
 	alarm[0] = bullet_cooldown_;
 	gun_clip --;
-	if (gun_clip == 0) {
+	if (gun_clip <= 0) {
 		alarm[11] = default_gun.change_clip_time;
 		gun_clip = default_gun.bullet_clip;
 	}

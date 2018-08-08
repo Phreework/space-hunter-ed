@@ -14,7 +14,8 @@ if place_meeting(x+speed_[h],y,o_solid){
 		speed_[@ h]=0;
 	}
 }
-x += speed_[h];
+
+x += scr_common_bullet_time_var(speed_[h]);
 
 if place_meeting(x,y+speed_[v],o_solid){
 	while !place_meeting(x,y+sign(speed_[v]),o_solid){
@@ -27,6 +28,6 @@ if place_meeting(x,y+speed_[v],o_solid){
 		speed_[@ v]=0;
 	}
 }
-y += speed_[v];
 
+y += scr_common_bullet_time_var(speed_[v]);
 
