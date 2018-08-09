@@ -9,3 +9,5 @@ scr_debug_draw_obj_count(10, 40 , o_enemy_normal1_parent, "普通敌人");
 scr_debug_draw_obj_count(10, 50 , o_enemy_normal2_parent, "进阶敌人");
 scr_debug_draw_obj_count(10, 60 , o_gun_parent, "武器");
 scr_debug_draw_obj_count(10, 70 , o_gun_bullet_parent_enemy, "敌人子弹");
+
+

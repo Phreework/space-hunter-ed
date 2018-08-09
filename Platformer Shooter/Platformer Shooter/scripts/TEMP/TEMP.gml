@@ -2,22 +2,8 @@
 if !instance_exists(o_player) exit;
 
 var xscale_ = scr_get_enemy_xscale();
-var dir_to_player = point_direction(x,y-sprite_height/2,o_player.x,o_player.y-o_player.sprite_height/2);
-if instance_exists(default_gun) {
-	if !(abs(scr_direction_constraint(default_gun.direction - dir_to_player)) < gun_rotate_speed){
-		if (scr_direction_constraint(default_gun.direction - dir_to_player) > 0){
-			default_gun.direction -= gun_rotate_speed;
-		} else {
-			default_gun.direction += gun_rotate_speed;
-		}
-	}
-	var dir = default_gun.direction;
-}
-scr_listener_get("flipped");
-if scr_listener_is_var_change("flipped") {
-	default_gun.direction =point_direction(0,0,flipped,0);
-}
-
+var dir = point_direction(x,y-sprite_height/2,o_player.x,o_player.y-o_player.sprite_height/2);
+var flipped=(o_player.x>x)*2-1;
 
 if (state_ == N1_SILENCE || state_ == N1_DIS_ATTACK) {
 	//绘制自己
@@ -28,9 +14,9 @@ if (state_ == N1_SILENCE || state_ == N1_DIS_ATTACK) {
 	if !instance_exists(default_gun) exit;
 	with (default_gun) {
 		//Draw the gun
-		x = other.x-4*other.flipped;
+		x = other.x-4*flipped;
 		y = other.y-other.sprite_height/2-8;
-		draw_sprite_ext(sprite_index,0, x, y,1,other.flipped,dir,other.image_blend,other.image_alpha);
+		draw_sprite_ext(sprite_index,0, x, y,1,flipped,dir,other.image_blend,other.image_alpha);
 	}
 } else if (state_ == N1_PATROL) {
 	//绘制自己
@@ -50,10 +36,9 @@ if (state_ == N1_SILENCE || state_ == N1_DIS_ATTACK) {
 	if !instance_exists(default_gun) exit;
 	with (default_gun) {
 		//Draw the gun
-		x = other.x-4*other.flipped;
+		x = other.x-4*flipped;
 		y = other.y-other.sprite_height/2-8;
-		
-		draw_sprite_ext(sprite_index,0, x, y,1,other.flipped,dir,other.image_blend,other.image_alpha);
+		draw_sprite_ext(sprite_index,0, x, y,1,flipped,dir,other.image_blend,other.image_alpha);
 	}
 } else if (state_ == N1_ADVANCE_ATTACK ) {
 	//绘制自己
