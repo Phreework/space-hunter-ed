@@ -10,6 +10,8 @@ health_ = 3;
 bullet_cooldown_ = 60;
 alarm[0] = random( bullet_cooldown_);
 
+//激活范围
+active_range = 250;
 //攻击范围
 attack_range = 10;
 

@@ -37,7 +37,7 @@ alarm[1] = patrol_time;
 //朝左
 patrol_flag = -1;
 
-gun_rotate_speed = scr_common_bullet_time_var(4);
+gun_rotate_speed = scr_common_bullet_time_var(2);
 
 flipped=(o_player.x>x)*2-1;
 scr_listener_create();
